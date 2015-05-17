@@ -1,4 +1,6 @@
-﻿using System.Web.Optimization;
+﻿using System.IO;
+using System.Threading;
+using System.Web.Optimization;
 
 namespace Xuenn.TrainLab.Site
 {
@@ -28,10 +30,11 @@ namespace Xuenn.TrainLab.Site
             #endregion
 
 #if DEBUG
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
 #else
             BundleTable.EnableOptimizations = true;
 #endif
         }
+
     }
 }

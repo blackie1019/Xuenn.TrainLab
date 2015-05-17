@@ -1,5 +1,5 @@
 ﻿using System.Runtime.Serialization;
-namespace Xuenn.TrainLab.Site.Models
+namespace Xuenn.TrainLab.Site.ViewModels
 {
     [DataContract]
     public class TestModel

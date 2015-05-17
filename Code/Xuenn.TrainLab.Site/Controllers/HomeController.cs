@@ -1,19 +1,17 @@
-﻿using System.Web.Http;
-using Xuenn.TrainLab.Site.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
 namespace Xuenn.TrainLab.Site.Controllers
 {
-    public class HomeController : ApiController
+    public class HomeController : Controller
     {
-        [HttpGet]
-        public TestModel Index()
+        // GET: Index
+        public ActionResult Index()
         {
-            var result = new TestModel
-            {
-                Name = "Blackie",
-                Value = "Okok"
-            };
-            return result;
+            return View();
         }
     }
 }
