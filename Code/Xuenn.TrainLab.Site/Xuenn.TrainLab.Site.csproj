@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="gruntfile.js" />
     <Content Include="packages.config" />
     <Content Include="Views\_LayoutPage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
