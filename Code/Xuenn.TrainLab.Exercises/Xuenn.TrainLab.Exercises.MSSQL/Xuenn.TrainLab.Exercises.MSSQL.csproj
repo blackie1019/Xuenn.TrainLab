@@ -39,8 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AnswerServiceDAL.cs" />
+    <Compile Include="AnswerService.cs" />
+    <Compile Include="Entities\QuizAnswer.cs" />
+    <Compile Include="Entities\QuizResult.cs" />
+    <Compile Include="Enums\CommandType.cs" />
+    <Compile Include="Enums\ResultType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

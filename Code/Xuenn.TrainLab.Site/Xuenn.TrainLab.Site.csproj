@@ -119,6 +119,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="package.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Configuration\DBConnection.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Content\css\app.css" />
     <Content Include="Global.asax" />
     <Content Include="gruntfile.js" />
@@ -126,7 +132,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="bower.json" />
-    <None Include="packages.xsd">
+    <None Include="connections.xsd">
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\Web.config" />
@@ -152,17 +158,24 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="Controllers\Services\MSSQLController.cs" />
     <Compile Include="Controllers\Services\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AnswerViewModel.cs" />
     <Compile Include="ViewModels\TestModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Configuration\" />
     <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xuenn.TrainLab.Web\Xuenn.TrainLab.Web.csproj">
+      <Project>{05d71acb-098d-4555-a5f8-aa97d4927e6a}</Project>
+      <Name>Xuenn.TrainLab.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

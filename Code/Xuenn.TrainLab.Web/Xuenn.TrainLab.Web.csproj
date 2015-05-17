@@ -39,16 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\MSSQLBLL.cs" />
+    <Compile Include="Enums\DBConnectionType.cs" />
+    <Compile Include="Models\AnswerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="Cache\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Models\" />
     <Folder Include="Mvc\" />
     <Folder Include="SignalR\" />
     <Folder Include="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xuenn.TrainLab.Exercises\Xuenn.TrainLab.Exercises.MSSQL\Xuenn.TrainLab.Exercises.MSSQL.csproj">
+      <Project>{fb0430c2-4f14-4fbb-be83-b027c8b1ae12}</Project>
+      <Name>Xuenn.TrainLab.Exercises.MSSQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
