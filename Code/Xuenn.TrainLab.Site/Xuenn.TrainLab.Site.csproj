@@ -119,13 +119,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\app.css" />
     <Content Include="Global.asax" />
     <Content Include="gruntfile.js" />
     <Content Include="packages.config" />
-    <Content Include="Views\_LayoutPage.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="bower.json" />
     <None Include="packages.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Web.config" />
+    <None Include="Views\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Views\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
