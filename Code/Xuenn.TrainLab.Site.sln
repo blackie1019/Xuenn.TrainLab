@@ -5,7 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xuenn.TrainLab.Site", "Xuenn.TrainLab.Site\Xuenn.TrainLab.Site.csproj", "{44440D10-6E60-4143-B7AF-A81F3CDD21B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xuenn.TrainLab.Web", "..\Xuenn.TrainLab.Web\Xuenn.TrainLab.Web\Xuenn.TrainLab.Web.csproj", "{05D71ACB-098D-4555-A5F8-AA97D4927E6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xuenn.TrainLab.Web", "Xuenn.TrainLab.Web\Xuenn.TrainLab.Web.csproj", "{05D71ACB-098D-4555-A5F8-AA97D4927E6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{413544E6-C283-405E-A1F2-8C66ED4CAD67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xuenn.TrainLab.Exercises.MSSQL", "Xuenn.TrainLab.Exercises\Xuenn.TrainLab.Exercises.MSSQL\Xuenn.TrainLab.Exercises.MSSQL.csproj", "{FB0430C2-4F14-4FBB-BE83-B027C8B1AE12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +25,15 @@ Global
 		{05D71ACB-098D-4555-A5F8-AA97D4927E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05D71ACB-098D-4555-A5F8-AA97D4927E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05D71ACB-098D-4555-A5F8-AA97D4927E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0430C2-4F14-4FBB-BE83-B027C8B1AE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0430C2-4F14-4FBB-BE83-B027C8B1AE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0430C2-4F14-4FBB-BE83-B027C8B1AE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0430C2-4F14-4FBB-BE83-B027C8B1AE12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB0430C2-4F14-4FBB-BE83-B027C8B1AE12} = {413544E6-C283-405E-A1F2-8C66ED4CAD67}
 	EndGlobalSection
 EndGlobal
