@@ -37,7 +37,7 @@ namespace Xuenn.TrainLab.Exercises.MSSQL
             result.ResultType = ResultType.Success;
 
             //check if two table are the same
-            while (true)
+            do
             {
                 bool b1 = readerVerify.Read();
                 bool b2 = readerCorrect.Read();
@@ -54,6 +54,8 @@ namespace Xuenn.TrainLab.Exercises.MSSQL
                 }
                 for (int i = 0; i < readerCorrect.FieldCount; i++)
                 {
+                    var correctColumn = readerCorrect[i].ToString();
+                    var verifyColumn = readerVerify[i].ToString();
                     if (String.Format("{0}", readerVerify[i]) != String.Format("{0}", readerCorrect[i]))
                     {
                         result.ResultType = ResultType.FailedScriptInconsistent;
@@ -61,12 +63,10 @@ namespace Xuenn.TrainLab.Exercises.MSSQL
                     }
                 }
 
-                if (result.ResultType == ResultType.FailedScriptWrongColumnNumber ||
-                    result.ResultType == ResultType.FailedScriptInconsistent)
-                {
-                    break;
-                }
-            }
+            } while (
+                result.ResultType != ResultType.FailedScriptWrongColumnNumber &&
+                     result.ResultType != ResultType.FailedScriptInconsistent);
+
             readerVerify.Close();
             readerCorrect.Close();
             connection.Close();
