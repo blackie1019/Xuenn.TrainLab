@@ -8,7 +8,10 @@
     @System.Web.Optimization.Styles.Render("~/bundles/css")
 </head>
 <body>
-    
+    <div>
+        @{ Html.RenderPartial("MenuPartial"); }
+    </div>
+
     <!--APP-->
     <div id="app">
         @RenderBody()

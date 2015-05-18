@@ -129,6 +129,7 @@
     <Content Include="Global.asax" />
     <Content Include="gruntfile.js" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="bower.json" />
@@ -137,6 +138,7 @@
     </None>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Lab\Exam.cshtml" />
+    <Content Include="Views\Shared\MenuPartial.cshtml" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,9 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Xuenn.TrainLab.Web\Xuenn.TrainLab.Web.csproj">
       <Project>{05d71acb-098d-4555-a5f8-aa97d4927e6a}</Project>

@@ -15,7 +15,6 @@ namespace Xuenn.TrainLab.Site
 
             bundles.Add(new ScriptBundle("~/bundles/bower_compnents").Include(
                 "~/Content/bower_components/jquery/dist/jquery.min.js",
-                "~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js",
                 "~/Content/bower_components/react/react.min.js"));
 
             #endregion
