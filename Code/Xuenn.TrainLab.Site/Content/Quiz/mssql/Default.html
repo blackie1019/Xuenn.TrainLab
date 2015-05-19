@@ -34,15 +34,8 @@
                 data: data,
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
-                success: function (msg) {
-                    console.log(msg);
-                    if (msg.d == 100000) alert("Correct!!");
-                    else if (msg.d == 200010) alert('Empty SQL.');
-                    else if (msg.d == 200020) alert('Wrong column number.');
-                    else if (msg.d == 200030) alert('Inconsistent with correct anwser.');
-                    else if (msg.d == 300010) alert('Reset completely.');
-                    else if (msg.d == 900000) alert('Wrong Answer.');
-                    else alert("Exception.");
+                success: function (data) {
+                        alert(data.VerifiyResultDescription);
                 },
                 error: function (xhr, status, error) {
                     msgObj = (new Function('return ' + xhr.responseText))()

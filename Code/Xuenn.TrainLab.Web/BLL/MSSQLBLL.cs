@@ -9,9 +9,9 @@ namespace Xuenn.TrainLab.Web.BLL
     {
         private static readonly AnswerService Service= new AnswerService();
 
-        public int VerifyAnswer(AnswerModel model)
+        public AnswerResultModel VerifyAnswer(AnswerModel model)
         {
-            var result = Service.VerifyAnswer(new QuizAnswer
+            var quizResult = Service.VerifyAnswer(new QuizAnswer
             {
                 QuizNumber = model.QuizNumber,
                 VerifySql = model.VerifySql,
@@ -19,7 +19,15 @@ namespace Xuenn.TrainLab.Web.BLL
                 ConnectionString = "Data source=.;Initial Catalog=NorthwindChinese;User id=sa;Password=pass.123"
             });
 
-            return (int)result.ResultType;
+            var result = new AnswerResultModel
+            {
+                QuizNumber = model.QuizNumber,
+                VerifySql = model.VerifySql,
+                IsPassedVerifiy = quizResult.ResultType==ResultType.Success,
+                VerifiyResultDescription = ConvertVerifyResultToDescriptPromptOut(quizResult.ResultType)
+            };
+
+            return result;
         }
 
         #region private
@@ -39,6 +47,11 @@ namespace Xuenn.TrainLab.Web.BLL
                 default:
                     return SQLVerifyType.Check;
             }
+        }
+
+        private string ConvertVerifyResultToDescriptPromptOut(ResultType type)
+        {
+            return type.ToString();
         }
 
         #endregion

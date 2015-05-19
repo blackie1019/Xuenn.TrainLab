@@ -31,7 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\MSSQLBLL.cs" />
+    <Compile Include="Service\ApplicationConfigurationService.cs" />
+    <Compile Include="Service\ApplicationCacheService.cs" />
     <Compile Include="Enums\DBConnectionType.cs" />
     <Compile Include="Models\AnswerModel.cs" />
+    <Compile Include="Models\AnswerResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Cache\" />
     <Folder Include="Mvc\" />
     <Folder Include="SignalR\" />
     <Folder Include="Utilities\" />

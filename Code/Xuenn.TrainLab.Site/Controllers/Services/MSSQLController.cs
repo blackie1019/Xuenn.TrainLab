@@ -9,13 +9,22 @@ namespace Xuenn.TrainLab.Site.Controllers.Services
     {
         private MSSQLBLL BLL=new MSSQLBLL();
         [HttpPost]
-        public int VerifyAnwser(AnswerViewModel viewModel)
+        public ResultViewModel VerifyAnwser(AnswerViewModel viewModel)
         {
-            return BLL.VerifyAnswer(new AnswerModel
+            var model = BLL.VerifyAnswer(new AnswerModel
             {
                 QuizNumber = viewModel.QuizNumber,
                 VerifySql = viewModel.VerifySql
             });
+
+            var result = new ResultViewModel
+            {
+                QuizNumber = model.QuizNumber,
+                VerifySql = model.VerifySql,
+                IsPassedVerifiy = model.IsPassedVerifiy,
+                VerifiyResultDescription = model.VerifiyResultDescription
+            };
+            return result;
         }
     }
 }
