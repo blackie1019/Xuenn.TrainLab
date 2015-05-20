@@ -38,6 +38,8 @@ namespace Xuenn.TrainLab.Site
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                 "~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css",
                 "~/Content/bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
+                "~/Content/bower_components/font-awesome/css/font-awesome.min.css",
+                "~/Content/bower_components/ionicons/css/ionicons.min.css",
                 "~/Content/theme/AdminLTE-master/plugins/morris/morris.min.css",
                 "~/Content/theme/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-1.2.2.min.css",
                 "~/Content/theme/AdminLTE-master/plugins/daterangepicker/daterangepicker-bs3.css",
