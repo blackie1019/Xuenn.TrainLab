@@ -136,10 +136,10 @@ $(function () {
     $.AdminLTE.pushMenu(o.sidebarToggleSelector);
   }
 
-  //Activate Bootstrap tooltip
-  if (o.enableBSToppltip) {
-    $(o.BSTooltipSelector).tooltip();
-  }
+  ////Activate Bootstrap tooltip
+  //if (o.enableBSToppltip) {
+  //  $(o.BSTooltipSelector).tooltip();
+  //}
 
   //Activate box widget
   if (o.enableBoxWidget) {

@@ -135,6 +135,7 @@
     <Content Include="Views\Shared\HeaderPartial.cshtml" />
     <Content Include="Views\Shared\MSSQLSidePartial.cshtml" />
     <Content Include="Views\Shared\FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_LabLayout.cshtml" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
