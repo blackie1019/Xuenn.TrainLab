@@ -1,24 +1,34 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <title>@ViewBag.Title</title>
-    @System.Web.Optimization.Styles.Render("~/bundles/css")
+    @Styles.Render("~/bundles/css")
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div>
-        @{ Html.RenderPartial("MenuPartial"); }
-    </div>
+<body class="skin-blue fixed">
+    <div class="wrapper">
 
-    <!--APP-->
-    <div id="app">
-        @RenderBody()
-    </div>
+        <!--Header-->
+        @{ Html.RenderPartial("HeaderPartial"); }
 
+        <!--Side-->
+        @{ Html.RenderPartial("MSSQLSidePartial"); }
+
+        <!--APP-->
+        <div id="app" class="content-wrapper">
+            @RenderBody()
+        </div>
+
+        <!--Footer-->
+        @{ Html.RenderPartial("FooterPartial"); }
+
+    </div>
     <!--Script-->
-    @System.Web.Optimization.Scripts.Render("~/bundles/bower_compnents")
-    @RenderSection("scripts",required:false)
+    @Scripts.Render("~/bundles/bower_compnents")
+    @Scripts.Render("~/bundles/theme/js")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

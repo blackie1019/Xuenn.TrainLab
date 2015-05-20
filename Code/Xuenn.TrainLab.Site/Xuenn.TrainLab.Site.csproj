@@ -132,7 +132,9 @@
     <Content Include="bower.json" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Lab\Exam.cshtml" />
-    <Content Include="Views\Shared\MenuPartial.cshtml" />
+    <Content Include="Views\Shared\HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\MSSQLSidePartial.cshtml" />
+    <Content Include="Views\Shared\FooterPartial.cshtml" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
