@@ -240,6 +240,7 @@
     <Content Include="Content\bower_components\react\react-with-addons.min.js" />
     <Content Include="Content\bower_components\react\react.js" />
     <Content Include="Content\bower_components\react\react.min.js" />
+    <Content Include="Content\css\index.css" />
     <Content Include="Content\css\app.css" />
     <Content Include="Content\images\author_1.png" />
     <Content Include="Content\images\author_2.png" />
