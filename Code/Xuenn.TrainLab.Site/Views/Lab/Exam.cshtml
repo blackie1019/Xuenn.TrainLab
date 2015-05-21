@@ -66,7 +66,7 @@
     <div id="Q1" data-quiz-id="1" class="right_column" style="display:none">
         <h2>Question 1</h2>
         <p>客戶資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question01.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question01.png")" />
         <p>列出位在台北市的客戶ID。</p>
         <div class="hr"></div>
         SELECT 出之欄位為 :<br><br>
@@ -85,7 +85,7 @@
     <div id="Q2" data-quiz-id="2" class="right_column" style="display:none">
         <h2>Question 2</h2>
         <p>產品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question02.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question02.png")" />
         <p>列出胡椒粉、海鮮粉及辣椒粉的總庫存。</p>
         <ul><li>sum</li></ul>
         <div class="hr"></div>
@@ -105,7 +105,7 @@
     <div id="Q3" data-quiz-id="3" class="right_column" style="display:none">
         <h2>Question 3</h2>
         <p>員工資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question03.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question03.png")" />
         <p>列出所有性別是小姐且職稱是業務的員工姓名並依姓名排序。</p>
         <ul><li>and</li></ul>
         <div class="hr"></div>
@@ -125,7 +125,7 @@
     <div id="Q4" data-quiz-id="4" class="right_column" style="display:none">
         <h2>Question 4</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question04.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question04.png")" />
         <p>列出曾在2004年（以OrderDate為主）處理訂單的員工ID（不得重複）並排序。</p>
         <ul><li>distinct</li></ul>
         <div class="hr"></div>
@@ -145,7 +145,7 @@
     <div id="Q5" data-quiz-id="5" class="right_column" style="display:none">
         <h2>Question 5</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question04.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question04.png")" />
         <p>列出處理2003年的前十筆訂單（以OrderDate排序）的員工ID。</p>
         <ul><li>top</li></ul>
         <div class="hr"></div>
@@ -165,7 +165,7 @@
     <div id="Q6" data-quiz-id="6" class="right_column" style="display:none">
         <h2>Question 6</h2>
         <p>供貨商資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question06.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question06.png")" />
         <p>列出地址在屏東且提供至少三樣產品的供應商ID並排序。</p>
         <ul><li>like</li><li>count</li></ul>
         <div class="hr"></div>
@@ -185,7 +185,7 @@
     <div id="Q7" data-quiz-id="7" class="right_column" style="display:none">
         <h2>Question 7</h2>
         <p>員工資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question03.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question03.png")" />
         <p>查詢林姓員工的數量。</p>
         <ul><li>like</li><li>count</li></ul>
         <div class="hr"></div>
@@ -205,7 +205,7 @@
     <div id="Q8" data-quiz-id="8" class="right_column" style="display:none">
         <h2>Question 8</h2>
         <p>供應商與產品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question08.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question08.png")"  />
         <p>列出不提供肉/家禽類和海鮮類產品的供應商CompanyName並排序。</p>
         <ul><li>not in</li></ul>
         <div class="hr"></div>
@@ -225,7 +225,7 @@
     <div id="Q9" data-quiz-id="9" class="right_column" style="display:none">
         <h2>Question 9</h2>
         <p>產品類別與商品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question09.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question09.png")"  />
         <p>列出每項產品類別共有多少產品（欄位：類別名稱、數量）並以CategoryID排序。</p>
         <ul><li>count</li><li>group by</li></ul>
         <div class="hr"></div>
@@ -246,7 +246,7 @@
     <div id="Q10" data-quiz-id="10" class="right_column" style="display:none">
         <h2>Question 10</h2>
         <p>訂單與產品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question10.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question10.png")"  />
         <p>列出在2004年曾經購買過每一種類別至少一項產品的客戶ID並排序。</p>
         <ul><li>not exist</li></ul>
         <div class="hr"></div>
@@ -266,7 +266,7 @@
     <div id="Q11" data-quiz-id="11" class="right_column" style="display:none">
         <h2>Question 11</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question11.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question11.png")" />
         <p>
             依照年度（OrderDate）列出該年度訂單總數、總訂單金額（UnitPrice * Quantity * (1-Discount)）
             、平均每筆訂單金額（金額皆四捨五入至小數點後第二位）並以總金額排序由大到小排序。
@@ -292,7 +292,7 @@
     <div id="Q12" data-quiz-id="12" class="right_column" style="display:none">
         <h2>Question 12</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question04.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question04.png")" />
         <p>列出在2002年負責20筆以上訂單的員工ID並以員工ID排序。</p>
         <ul><li>count</li></ul>
         <div class="hr"></div>
@@ -312,7 +312,7 @@
     <div id="Q13" data-quiz-id="13" class="right_column" style="display:none">
         <h2>Question 13</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question04.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question04.png")" />
         <p>分別列出每一年使用次數最多的貨運方式ID。</p>
         <ul><li>max</li><li>group by</li></ul>
         <div class="hr"></div>
@@ -333,7 +333,7 @@
     <div id="Q14" data-quiz-id="14" class="right_column" style="display:none">
         <h2>Question 14</h2>
         <p>訂單,顧客與員工資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question14.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question14.png")"  />
         <p>列出曾經處理過「凱誠國際顧問公司」和「師大貿易」的訂單的員工ID及姓名並以ID排序。</p>
         <ul><li>INTERSECT</li></ul>
         <div class="hr"></div>
@@ -354,7 +354,7 @@
     <div id="Q15" data-quiz-id="15" class="right_column" style="display:none">
         <h2>Question 15</h2>
         <p>員工資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question15.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question15.png")" />
         <p>列出六月出生的員工姓名並排序。</p>
         <ul><li>date</li></ul>
         <div class="hr"></div>
@@ -374,7 +374,7 @@
     <div id="Q16" data-quiz-id="16" class="right_column" style="display:none">
         <h2>Question 16</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question04.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question04.png")" />
         <p>列出送貨日期延誤的訂單編號（ShippedDate晚於RequiredDate）及延誤天數並以訂單編號排序。</p>
         <ul><li>date</li></ul>
         <div class="hr"></div>
@@ -395,7 +395,7 @@
     <div id="Q17" data-quiz-id="17" class="right_column" style="display:none">
         <h2>Question 17</h2>
         <p>員工資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question03.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question03.png")" />
         <p>列出主管ID、姓名、薪資、其管理的下屬數量和下屬平均薪資。以主管ID排序。</p>
         <ul><li>count</li><li>avg</li></ul>
         <div class="hr"></div>
@@ -419,7 +419,7 @@
     <div id="Q18" data-quiz-id="18" class="right_column" style="display:none">
         <h2>Question 18</h2>
         <p>產品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question02.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question02.png")" />
         <p>列出產品編號、名稱、庫存量UnitsInStock、已訂購量UnitsOnOrder及安全存量ReorderLevel，並新增一欄位其值為'safe'（庫存量 >= 安全存量）或'reordering'（庫存量 < 安全存量 & 已訂購量+庫存量 >= 安全存量）或'unsafe'（其他）。</p>
         <ul><li>case when then</li></ul>
         <div class="hr"></div>
@@ -444,7 +444,7 @@
     <div id="Q19" data-quiz-id="19" class="right_column" style="display:none">
         <h2>Question 19</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question11.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question11.png")" />
         <p>列出2004年三月總成交金額最多的5名員工ID及成交金額並以成交金額由大到小排序。</p>
         <ul><li>sum</li><li>top</li></ul>
         <div class="hr"></div>
@@ -465,7 +465,7 @@
     <div id="Q20" data-quiz-id="20" class="right_column" style="display:none">
         <h2>Question 20</h2>
         <p>訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question04.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question04.png")" />
         <p>列出2003年平均每月訂單數。</p>
         <ul><li>avg</li><li>count</li></ul>
         <div class="hr"></div>
@@ -485,7 +485,7 @@
     <div id="Q21" data-quiz-id="21" class="right_column" style="display:none">
         <h2>Question 21</h2>
         <p>訂單與產品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question10.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question10.png")"  />
         <p>依照客戶的送貨城市列出各城市訂購的各種類別的訂單數量。以ShipCity及Category排序。</p>
         <div class="hr"></div>
         SELECT 出之欄位為 :<br><br>
@@ -524,7 +524,7 @@
             若為delete或insert，另一部分欄位皆為NULL。若為update，則Del和Ins都需記錄。注意：若操作未影響到資料表（如欲刪除資料不存在），則不需記錄。<br />
         </p>
         <p>出貨與出貨紀錄資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question22.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question22.png")"  />
         <div class="hr"></div>
         <h1>Your SQL Command: </h1>
         <textarea rows="20" cols="60" id="Sql22"></textarea>
@@ -533,7 +533,7 @@
     <div id="Q23" data-quiz-id="23" class="right_column" style="display:none">
         <h2>Question 23</h2>
         <p>員工與訂單資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question23.png" width="700" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question23.png")"  />
         <p>調整薪資，全年處理50筆以上訂單的員工薪資加5%，處理100筆以上訂單則加10%，最多加5000元，且不得高於其主管。</p>
         <ul><li>update</li></ul>
         <div class="hr"></div>
@@ -544,7 +544,7 @@
     <div id="Q24" data-quiz-id="24" class="right_column" style="display:none">
         <h2>Question 24</h2>
         <p>員工資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question03.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question24.png")" />
         <p>在員工資料表中新增一欄位Seniority，其型態為int，值為該員工工作至2004-12-31的年資 (月份數、不足月不算) 。</p>
         <ul><li>alter</li><li>date</li></ul>
         <div class="hr"></div>
@@ -555,7 +555,7 @@
     <div id="Q25" data-quiz-id="25" class="right_column" style="display:none">
         <h2>Question 25</h2>
         <p>產品資料表架構</p>
-        <img src="~/Content/Quiz/mssql/Images/Question25.png" />
+        <img src="@Href("~/Content/images/quiz/mssql/Question25.png")" />
         <p>從Products表中刪除不再銷售的產品資訊。</p>
         <ul><li>delete</li></ul>
         <div class="hr"></div>
@@ -569,10 +569,22 @@
     <script>
         $(function () {
 
+            //Function
+            function setTargetId(id) {
+                if (typeof (id) === "undefined") {
+                    id = $('.quiz-menu:visible:eq(0)').data('item-id');
+                }
+                $('#now-quiz-id').html(id.replace('Q', ''));
+            }
+
+            //Init
+            setTargetId();
+
+            //Event
             $(".quiz-menu").on('click', function() {
                 $('.right_column').css('display', 'none');
                 var targetId = $(this).data('item-id');
-                $('#now-quiz-id').html(targetId.replace('Q',''));
+                setTargetId(targetId);
                 $('#' + targetId).show();
             });
 
@@ -594,9 +606,10 @@
                         alert(data.VerifiyResultDescription);
                     },
                     error: function (xhr, status, error) {
-                        msgObj = (new Function('return ' + xhr.responseText))()
-                        msg = msgObj.Message;
-                        alert("Syntax Error:\n" + msg)
+                        var msgObj = (new Function('return ' + xhr.responseText))(),
+                            msg = msgObj.Message;
+
+                        alert("Syntax Error:\n" + msg);
                     }
                 });
             });

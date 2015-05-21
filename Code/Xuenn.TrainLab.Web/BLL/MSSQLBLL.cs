@@ -16,7 +16,7 @@ namespace Xuenn.TrainLab.Web.BLL
                 QuizNumber = model.QuizNumber,
                 VerifySql = model.VerifySql,
                 SQLVerifyType = GetSQLVerifyType(model.QuizNumber),
-                ConnectionString = "Data source=.;Initial Catalog=NorthwindChinese;User id=sa;Password=pass.123"
+                ConnectionString = "Data Source=172.17.23.34;Initial Catalog=NorthwindChinese;User ID=sa;Password=pass.123;"
             });
 
             var result = new AnswerResultModel

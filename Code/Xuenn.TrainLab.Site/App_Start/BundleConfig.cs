@@ -15,12 +15,11 @@ namespace Xuenn.TrainLab.Site
 
             bundles.Add(new ScriptBundle("~/bundles/bower_compnents").Include(
                 "~/Content/bower_components/jquery/dist/jquery.min.js",
-                "~/Content/bower_components/bootstrap/dist/bootstrap.min.js",
+                "~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js",
                 "~/Content/bower_components/react/react.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/theme/js").Include(
                 "~/Content/theme/AdminLTE-master/plugins/fastclick/fastclick.min.js",
-               "~/Content/theme/AdminLTE-master/ dist/js/app.min.js",
                 "~/Content/theme/AdminLTE-master/plugins/sparkline/jquery.sparkline.min.js",
                 "~/Content/theme/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
                 "~/Content/theme/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
@@ -48,7 +47,9 @@ namespace Xuenn.TrainLab.Site
                 "~/Content/theme/AdminLTE-master/plugins/jvectormap/jquery-jvectormap-1.2.2.min.css",
                 "~/Content/theme/AdminLTE-master/plugins/daterangepicker/daterangepicker-bs3.css",
                 "~/Content/theme/AdminLTE-master/dist/css/AdminLTE.min.css",
-                "~/Content/theme/AdminLTE-master/dist/css/skins/_all-skins.min.css",
+                "~/Content/theme/AdminLTE-master/dist/css/skins/_all-skins.min.css"));
+
+            bundles.Add(new StyleBundle("~/bundles/app/css").Include(
                 "~/Content/css/app.css"));
 
             #endregion

@@ -1,58 +1,148 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<section class="content">
-    <div class="row">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-6">
-            <div class="jumbotron">
-                <h1>Xuenn Technical Lab</h1>
-                <p>From Min & Max & Amy & Christopherr</p>
-                <p class="text-right">
-                    <a class="btn btn-primary btn-lg" href="/Lab/Exam">New Version</a>
-                    <a class="btn btn-danger btn-lg" href="@Href("~/Content/Quiz/mssql/Default.html")">Old Version</a>
-                </p>
-            </div>
-            <div class="box box-solid">
-                <div class="box-body">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item">
-                                <img src="@Href("~/Content/images/carousel_1.jpg")" alt="First slide">
-                                <div class="carousel-caption">
-                                    Learning
+<div id="main-content">
+    <div class="home h20">
+        <div class="home-inner" style="min-height: 562px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 class="animated fadeInDown delay-1 text-left">
+                            Xuenn Technical Lab
+                        </h1>
+                        <ul class="labels-menu labels-success list-unstyled">
+                            <li class="animated slideInLeft delay-1">
+                                <span><i class="fa fa-circle"></i>Teaching Lab</span>
+                            </li>
+                            <li class="animated slideInLeft delay-2">
+                                <span><i class="fa fa-circle"></i>Sharing knowledge</span>
+                            </li>
+                            <li class="animated slideInLeft delay-3">
+                                <span><i class="fa fa-circle"></i> Built with Bootstrap 3 & WebAPI 2 & Bower</span>
+                            </li>
+                            <li class="animated slideInLeft delay-5">
+                                <span><i class="fa fa-circle"></i> Active community</span>
+                            </li>
+                            <li class="animated slideInLeft delay-6">
+                                <a class="btn btn-primary btn-lg" href="/Lab/Exam">Go Lab</a>
+                            </li>
+                        </ul>
+                        <p class="animated zoomInUp delay-7">
+                            From Min & Max & Amy & Christopherr
+                        </p>
+                    </div>
+                    <!--./col-md-6 -->
+                    <div class="col-sm-6">
+                        <div class="animated slideInRight delay-1 presentation">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="@Href("~/Content/images/carousel_1.jpg")" alt="First slide">
+                                        <div class="carousel-caption">
+                                            <h3 data-animation="animated bounceInLeft">
+                                                Learning
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="@Href("~/Content/images/carousel_2.jpg")" alt="Second slide">
+                                        <div class="carousel-caption">
+                                            <h3 data-animation="animated bounceInRight">
+                                                Thinking
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="@Href("~/Content/images/carousel_3.jpg")" alt="Third slide">
+                                        <div class="carousel-caption">
+                                            <h3 data-animation="animated zoomInUp">
+                                                Stronging
+                                            </h3>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item active">
-                                <img src="@Href("~/Content/images/carousel_2.jpg")" alt="Second slide">
-                                <div class="carousel-caption">
-                                    Thinking
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="@Href("~/Content/images/carousel_3.jpg")" alt="Third slide">
-                                <div class="carousel-caption">
-                                    stronging
-                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                    <span class="fa fa-angle-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
                             </div>
                         </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="fa fa-angle-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="fa fa-angle-right"></span>
-                        </a>
+                        <div class="text-center" style="color: rgba(255,255,255,0.5); margin-top: 20px; font-weight: 400;">
+                            Currently v0.0.1
+                        </div>
+                    </div>
+                    <!--./col-md-6 -->
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <div class="author">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-offset-4">
+                        <h2 class="text-center">About The Author</h2>
+                        <div class="image">
+                            <img class="img-responsive img-circle" src="@Href("~/Content/images/author_1.png")" alt="Author Picture">
+                        </div>
+                        <div class="image">
+                            <img class="img-responsive img-circle" src="@Href("~/Content/images/author_2.png")" alt="Author Picture">
+                        </div>
+                        <div class="image">
+                            <img class="img-responsive img-circle" src="@Href("~/Content/images/author_3.png")" alt="Author Picture">
+                        </div>
+                        <div class="image">
+                            <img class="img-responsive img-circle" src="@Href("~/Content/images/author_4.png")" alt="Author Picture">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
+            <!-- /.container -->
         </div>
     </div>
-</section>
+</div>
+
+@section scripts
+{
+    <script>
+        $(function () {
+            //Function to animate slider captions 
+            function doAnimations(elems) {
+                //Cache the animationend event in a variable
+                var animEndEv = 'webkitAnimationEnd animationend';
+
+                elems.each(function () {
+                    var $this = $(this),
+                        $animationType = $this.data('animation');
+                    $this.addClass($animationType).one(animEndEv, function () {
+                        $this.removeClass($animationType);
+                    });
+                });
+            }
+
+            var $myCarousel = $('#carousel-example-generic'),
+                $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+
+            //Initialize carousel 
+            $myCarousel.carousel();
+
+            //Animate captions in first slide on page load 
+            doAnimations($firstAnimatingElems);
+
+            //Pause carousel  
+            $myCarousel.carousel('pause');
+
+            //Other slides to be animated on carousel slide event 
+            $('.carousel').on('slide.bs.carousel', function (e) {
+                var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+                doAnimations($animatingElems);
+            });
+        });
+    </script>
+}
