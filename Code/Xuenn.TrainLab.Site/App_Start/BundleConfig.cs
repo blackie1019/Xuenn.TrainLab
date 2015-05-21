@@ -49,7 +49,7 @@ namespace Xuenn.TrainLab.Site
                 "~/Content/theme/AdminLTE-master/dist/css/AdminLTE.min.css",
                 "~/Content/theme/AdminLTE-master/dist/css/skins/_all-skins.min.css"));
 
-            bundles.Add(new StyleBundle("~/bundles/app/css").Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/css/app.css"));
 
             #endregion
